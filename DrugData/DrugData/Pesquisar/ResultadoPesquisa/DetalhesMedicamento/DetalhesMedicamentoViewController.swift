@@ -8,33 +8,25 @@
 import UIKit
 
 class DetalhesMedicamentoViewController: UIViewController {
-
-    @IBOutlet weak var tableViewDetails: UITableView!
    
-    var arrayMed = [Remedios] ()
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameDrug: UILabel!
+    @IBOutlet weak var laboratoryName: UILabel!
+    @IBOutlet weak var categoryDrug: UILabel!
+    @IBOutlet weak var priceDrug: UILabel!
+    
+    var drugDetail: Remedios?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewDetails.delegate = self
-        tableViewDetails.dataSource = self
-        
-        arrayMed.append(Remedios(name: "Remédio: Coristina D", nameLaboratory: "Laboratório: COSMED S.A", nameCategory: "Categoria: ANTIGRIPAL ", preco: "Preço: R$ 17, 24"))
+        self.imageView.image = UIImage(named: "remedio.png")
+        self.nameDrug.text = drugDetail!.name
+        self.laboratoryName.text = "Laboratório: \(drugDetail!.nameLaboratory)"
+        self.categoryDrug.text = "Categoria: \(drugDetail!.nameCategory)"
+        self.priceDrug.text! = "Preço: R$\(drugDetail!.preco)"
     }
-    
-}
-extension DetalhesMedicamentoViewController: UITableViewDelegate {
-    
-}
-extension DetalhesMedicamentoViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayMed.count
+    func setup(remedio: Remedios){
+        self.drugDetail = remedio
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "DetalheMedicamentoTableViewCell", for: indexPath) as! DetalheMedicamentoTableViewCell
-        cell.setup(details: arrayMed[indexPath.row])
-        return cell
-    }
-    
     
 }

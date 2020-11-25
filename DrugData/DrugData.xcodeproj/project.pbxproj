@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3DBB907256DF81900A1869B /* Cabecalho.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBB9742565B5D100A5550E /* Cabecalho.swift */; };
+		E3DBB90B256DF81E00A1869B /* Remedios.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232BC03256B30BD00460ADF /* Remedios.swift */; };
+		E3DBB910256E04D500A1869B /* LaboratorioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DBB90F256E04D500A1869B /* LaboratorioTableViewCell.swift */; };
+		E3DBB915256E088900A1869B /* GenericoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DBB914256E088900A1869B /* GenericoTableViewCell.swift */; };
+		E3DBB91A256E0E9D00A1869B /* ControladosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DBB919256E0E9D00A1869B /* ControladosTableViewCell.swift */; };
+		E3DBB91F256E11B400A1869B /* OrganicoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DBB91E256E11B400A1869B /* OrganicoTableViewCell.swift */; };
 		F232BBF4256B2B6B00460ADF /* LocalizacaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232BBF3256B2B6B00460ADF /* LocalizacaoViewController.swift */; };
 		F232BBFC256B2B7900460ADF /* LocalizacaoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F232BBFB256B2B7900460ADF /* LocalizacaoViewController.storyboard */; };
-		F232BC04256B30BD00460ADF /* Remedios.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232BC03256B30BD00460ADF /* Remedios.swift */; };
 		F232BC0F256B323900460ADF /* NomeRemediosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232BC0E256B323900460ADF /* NomeRemediosTableViewCell.swift */; };
 		F232BC21256B382100460ADF /* DetalhesMedicamentoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F232BC20256B382100460ADF /* DetalhesMedicamentoViewController.storyboard */; };
 		F232BC2A256B391400460ADF /* DetalheMedicamentoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232BC29256B391400460ADF /* DetalheMedicamentoTableViewCell.swift */; };
@@ -43,7 +48,6 @@
 		F2D2D577255E0F510025BEF3 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D2D576255E0F510025BEF3 /* FavoritosViewController.swift */; };
 		F2D2D57F255E0F800025BEF3 /* FavoritosViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D2D57E255E0F800025BEF3 /* FavoritosViewController.storyboard */; };
 		F2DBB9702565B1BF00A5550E /* CategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBB96F2565B1BF00A5550E /* CategoriaViewController.swift */; };
-		F2DBB9752565B5D100A5550E /* Cabecalho.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DBB9742565B5D100A5550E /* Cabecalho.swift */; };
 		F2DBB97A2565B8AB00A5550E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = F2DBB9792565B8AB00A5550E /* 1.png */; };
 		F2DF0F64255C92A500F43B54 /* EsqueceuASenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DF0F63255C92A500F43B54 /* EsqueceuASenhaViewController.swift */; };
 		F2DF0F6C255C92B600F43B54 /* EsqueceuASenhaViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DF0F6B255C92B600F43B54 /* EsqueceuASenhaViewController.storyboard */; };
@@ -98,6 +102,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E3DBB90F256E04D500A1869B /* LaboratorioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaboratorioTableViewCell.swift; sourceTree = "<group>"; };
+		E3DBB914256E088900A1869B /* GenericoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericoTableViewCell.swift; sourceTree = "<group>"; };
+		E3DBB919256E0E9D00A1869B /* ControladosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladosTableViewCell.swift; sourceTree = "<group>"; };
+		E3DBB91E256E11B400A1869B /* OrganicoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganicoTableViewCell.swift; sourceTree = "<group>"; };
 		F232BBF3256B2B6B00460ADF /* LocalizacaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizacaoViewController.swift; sourceTree = "<group>"; };
 		F232BBFB256B2B7900460ADF /* LocalizacaoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LocalizacaoViewController.storyboard; sourceTree = "<group>"; };
 		F232BC03256B30BD00460ADF /* Remedios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remedios.swift; sourceTree = "<group>"; };
@@ -202,6 +210,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E3DBB8F2256DD63200A1869B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F232BC03256B30BD00460ADF /* Remedios.swift */,
+				F2DBB9742565B5D100A5550E /* Cabecalho.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F232BBF2256B2B4900460ADF /* Localização */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +287,7 @@
 		F233D0A22559E99500D5CE2D /* DrugData */ = {
 			isa = PBXGroup;
 			children = (
+				E3DBB8F2256DD63200A1869B /* Model */,
 				F233D0A52559E99500D5CE2D /* SceneDelegate.swift */,
 				F233D0AC2559E99900D5CE2D /* Assets.xcassets */,
 				F233D0AE2559E99900D5CE2D /* LaunchScreen.storyboard */,
@@ -286,8 +304,6 @@
 				F2D2D575255E0F330025BEF3 /* Favoritos */,
 				F232BBF2256B2B4900460ADF /* Localização */,
 				F23C32A42562FFC000F25304 /* Extenssões */,
-				F232BC03256B30BD00460ADF /* Remedios.swift */,
-				F2DBB9742565B5D100A5550E /* Cabecalho.swift */,
 				F2ED9EEE256D54BB00D015AF /* profileImage.swift */,
 				F2ED9F0B256D69BE00D015AF /* ProfileImageWoman.swift */,
 			);
@@ -362,6 +378,7 @@
 				F23C329F2562FCCF00F25304 /* PesquisaLaboratorioViewController.swift */,
 				F247408825670FF400D18DE0 /* PesquisaLaboratorioViewController.storyboard */,
 				F247408D2567100500D18DE0 /* TableView.Xib */,
+				E3DBB90F256E04D500A1869B /* LaboratorioTableViewCell.swift */,
 			);
 			name = "Laboratório";
 			path = "Laboratório";
@@ -380,6 +397,7 @@
 			children = (
 				F23C8EDB256ACFD90094FA87 /* OrganicoViewController.storyboard */,
 				F23C8EE0256ACFF60094FA87 /* OrganicoViewController.swift */,
+				E3DBB91E256E11B400A1869B /* OrganicoTableViewCell.swift */,
 			);
 			name = "Orgânico";
 			path = "Orgânico";
@@ -390,6 +408,7 @@
 			children = (
 				F23C8EE8256AD13F0094FA87 /* GenericoViewController.swift */,
 				F23C8EED256AD14D0094FA87 /* GenericoViewController.storyboard */,
+				E3DBB914256E088900A1869B /* GenericoTableViewCell.swift */,
 			);
 			name = "Genérico";
 			path = "Genérico";
@@ -400,6 +419,7 @@
 			children = (
 				F23C8EF4256AD2A70094FA87 /* ControladosViewController.storyboard */,
 				F23C8EFC256AD2EC0094FA87 /* ControladosViewController.swift */,
+				E3DBB919256E0E9D00A1869B /* ControladosTableViewCell.swift */,
 			);
 			path = Controlados;
 			sourceTree = "<group>";
@@ -735,17 +755,18 @@
 				F23C32862562F4A500F25304 /* ResultadoPesquisaViewController.swift in Sources */,
 				F233D0A82559E99500D5CE2D /* ViewController.swift in Sources */,
 				F232BC2A256B391400460ADF /* DetalheMedicamentoTableViewCell.swift in Sources */,
+				E3DBB91A256E0E9D00A1869B /* ControladosTableViewCell.swift in Sources */,
+				E3DBB910256E04D500A1869B /* LaboratorioTableViewCell.swift in Sources */,
 				F2E282D0255C8DAB00460304 /* CadastroViewController.swift in Sources */,
 				F247408325670F0B00D18DE0 /* ControladosGeralTableViewCell.swift in Sources */,
 				F2E7458C256C32EC0031D731 /* Cadastro2ViewController.swift in Sources */,
-				F2DBB9752565B5D100A5550E /* Cabecalho.swift in Sources */,
 				F2DBB9702565B1BF00A5550E /* CategoriaViewController.swift in Sources */,
 				F2E745C3256C44D60031D731 /* EditarPerfilViewController.swift in Sources */,
 				F2ED9EEF256D54BB00D015AF /* profileImage.swift in Sources */,
 				F23C8EE1256ACFF60094FA87 /* OrganicoViewController.swift in Sources */,
+				E3DBB90B256DF81E00A1869B /* Remedios.swift in Sources */,
 				F2DF0F64255C92A500F43B54 /* EsqueceuASenhaViewController.swift in Sources */,
 				F23C8EE9256AD13F0094FA87 /* GenericoViewController.swift in Sources */,
-				F232BC04256B30BD00460ADF /* Remedios.swift in Sources */,
 				F233D0DC2559F3BB00D5CE2D /* File.swift in Sources */,
 				F23C8F0D256ADD180094FA87 /* PerfilViewController.swift in Sources */,
 				F2D2D577255E0F510025BEF3 /* FavoritosViewController.swift in Sources */,
@@ -753,10 +774,13 @@
 				F2ED9F04256D566300D015AF /* AvatarCollectionViewCell.swift in Sources */,
 				F2ED9F0C256D69BE00D015AF /* ProfileImageWoman.swift in Sources */,
 				F233D0A42559E99500D5CE2D /* AppDelegate.swift in Sources */,
+				E3DBB91F256E11B400A1869B /* OrganicoTableViewCell.swift in Sources */,
 				F2E282BB255C882800460304 /* LoginViewController.swift in Sources */,
+				E3DBB915256E088900A1869B /* GenericoTableViewCell.swift in Sources */,
 				F233D0A62559E99500D5CE2D /* SceneDelegate.swift in Sources */,
 				F2ED9EDE256D4EDD00D015AF /* AvatarViewController.swift in Sources */,
 				F2D2D55B255E08110025BEF3 /* PesquisarViewController.swift in Sources */,
+				E3DBB907256DF81900A1869B /* Cabecalho.swift in Sources */,
 				F232BC0F256B323900460ADF /* NomeRemediosTableViewCell.swift in Sources */,
 				F23C8EFD256AD2EC0094FA87 /* ControladosViewController.swift in Sources */,
 				F232BBF4256B2B6B00460ADF /* LocalizacaoViewController.swift in Sources */,

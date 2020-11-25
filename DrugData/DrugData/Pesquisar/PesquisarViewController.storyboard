@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EoV-2A-Tfa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EoV-2A-Tfa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="rKx-TO-rA0">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EoV-2A-Tfa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" automaticallyAdjustsScrollViewInsets="NO" id="EoV-2A-Tfa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="0r9-24-3Ho"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wNJ-D8-ozU">
@@ -21,7 +21,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="72p-YH-0V8" kind="relationship" relationship="viewControllers" id="ar9-uN-0wx"/>
+                        <segue destination="2u2-tV-gZD" kind="relationship" relationship="viewControllers" id="ar9-uN-0wx"/>
                         <segue destination="k31-fp-p7n" kind="relationship" relationship="viewControllers" id="t0p-wN-bHu"/>
                         <segue destination="fkE-Ab-VkP" kind="relationship" relationship="viewControllers" id="QSv-eO-Tf0"/>
                         <segue destination="kuB-mg-BaT" kind="relationship" relationship="viewControllers" id="Vsg-Vf-iAc"/>
@@ -74,7 +74,7 @@
             </objects>
             <point key="canvasLocation" x="1453" y="436"/>
         </scene>
-        <!--Pesquisar-->
+        <!--Pesquisar View Controller-->
         <scene sceneID="mVS-4c-Pel">
             <objects>
                 <viewController id="72p-YH-0V8" customClass="PesquisarViewController" customModule="DrugData" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,7 +160,6 @@
                         <viewLayoutGuide key="safeArea" id="Ims-u3-XZb"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pesquisar" image="magnifyingglass" catalog="system" id="udu-lI-xae"/>
                     <navigationItem key="navigationItem" id="qNQ-Zi-X5P"/>
                     <connections>
                         <outlet property="imageViewAvatar" destination="guh-kG-8vY" id="8BX-Nr-NDe"/>
@@ -172,6 +171,25 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecV-RT-oqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3105.7971014492755" y="16.741071428571427"/>
+        </scene>
+        <!--Pesquisar-->
+        <scene sceneID="edd-YT-u9W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2u2-tV-gZD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pesquisar" image="magnifyingglass" catalog="system" id="udu-lI-xae"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0gC-Q9-xvG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="72p-YH-0V8" kind="relationship" relationship="rootViewController" id="6gt-wO-Cb4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6y-MW-e9C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2195.6521739130435" y="16.741071428571427"/>
         </scene>

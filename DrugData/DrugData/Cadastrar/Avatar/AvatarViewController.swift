@@ -53,13 +53,13 @@ extension AvatarViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if segmentedControlOptions.selectedSegmentIndex == TypeSegment.woman {
-            if let perfil = UIStoryboard(name: "PesquisarViewController", bundle: nil).instantiateInitialViewController()  {
-                navigationController?.pushViewController(perfil, animated: true)
+            if let tabBarController = UIStoryboard(name: "PesquisarViewController", bundle: nil).instantiateViewController(withIdentifier: "tabBarController") as? UITabBarController{
+                UIViewController.replaceRootViewController(viewController: tabBarController)
             }
         }
         if segmentedControlOptions.selectedSegmentIndex == TypeSegment.man {
-            if let perfil = UIStoryboard(name: "PesquisarViewController", bundle: nil).instantiateInitialViewController()  {
-                navigationController?.pushViewController(perfil, animated: true)
+            if let tabBarController = UIStoryboard(name: "PesquisarViewController", bundle: nil).instantiateViewController(withIdentifier: "tabBarController") as? UITabBarController{
+                UIViewController.replaceRootViewController(viewController: tabBarController)
             }
         }
         

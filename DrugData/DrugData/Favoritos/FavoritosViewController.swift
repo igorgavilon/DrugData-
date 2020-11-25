@@ -32,7 +32,7 @@ class FavoritosViewController: UIViewController {
         tableViewFavoritos.delegate = self
         tableViewFavoritos.dataSource = self
         
-        arrayMed.append(Remedios(name: "Remédio: Coristina D", nameLaboratory: "Laboratório: COSMED S.A", nameCategory: "Categoria: ANTIGRIPAL ", preco: "Preço: R$ 17, 24"))
+        arrayMed.append(Remedios(name: "Coristina D", nameLaboratory: "Laboratório: COSMED S.A", nameCategory: "Categoria: ANTIGRIPAL ", productType: "Novo", preco: "Preço: R$ 17, 24"))
     }
 }
 extension FavoritosViewController: UITableViewDelegate {
